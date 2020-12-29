@@ -1,0 +1,83 @@
+.FormInput
+  position: relative
+  margin-top: 30px
+  width: 100%
+
+  .Borders
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    pointer-events: none
+
+    span
+      position: absolute
+      background-color: #1928f5
+      transition: 0.1s ease-in-out
+
+    .Left
+      left: 0
+      bottom: 0
+      width: 2px
+      height: 0
+      transition-delay: 0s
+
+    .Right
+      right: 0
+      top: 0
+      width: 2px
+      height: 0
+      transition-delay: 0s
+
+    .Top
+      left: 0
+      top: 0
+      width: 0
+      height: 2px
+      transition-delay: 0s
+
+    .Bottom
+      right: 0
+      bottom: 0
+      width: 0
+      height: 2px
+      transition-delay: 0s
+
+  .Input
+    border: 2px solid #ececf1
+    padding: 15px 20px
+    width: 100%
+    font-family: 'Montserrat', sans-serif
+
+    &:focus
+      outline: none
+
+    &:focus + .Borders .Left
+      height: 100%
+      transition-delay: 0.3s
+    &:focus + .Borders .Right
+      height: 100%
+      transition-delay: 0.1s
+    &:focus + .Borders .Top
+      width: 100%
+      transition-delay: 0s
+    &:focus + .Borders .Bottom
+      width: 100%
+      transition-delay: 0.2s
+
+  .InputLabel
+    position: absolute
+    font-size: 12px
+    font-weight: 600
+    top: -5px
+    left: 20px
+    background-color: #fff
+    padding: 0 4px
+    color: #b8bdcb
+    z-index: 3
+
+.FormError
+  color: #BF0202
+  font-size: 12px
+  margin-top: 10px

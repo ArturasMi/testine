@@ -1,0 +1,395 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Title {
+  color: #091d51;
+  font-size: 26px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.Subtitle {
+  color: #b8bdcb;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.Page {
+  background: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px;
+}
+
+.Container {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 31px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 31px 1px rgba(0, 0, 0, 0.05);
+  padding: 80px;
+  min-width: 600px;
+  margin: auto;
+}
+
+.Col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0px;
+}
+
+@media (max-width: 992px) {
+  .Container {
+    width: 100%;
+    min-width: 100%;
+    padding: 40px;
+  }
+  .Page {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Container {
+    padding: 20px;
+  }
+}
+
+.Login .ForgottenPassword {
+  color: #b8bceb;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 50px 0;
+}
+
+.Login .LoginButton {
+  margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .Login .LoginButton {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .Login .Buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Login .Buttons .Btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.Register .Buttons {
+  margin-top: 50px;
+}
+
+.Register .RegisterButton {
+  margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .Register .RegisterButton {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .Register .Buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Register .Buttons .Btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.Profile .Buttons {
+  margin-top: 30px;
+}
+
+.Profile .Buttons .Btn-Blue {
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .Profile .Btn-Blue {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .Profile .Buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Profile .Buttons .Btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.UsersList .Buttons {
+  margin-top: 30px;
+}
+
+.UsersList .Buttons .Btn-Blue {
+  margin-right: 20px;
+}
+
+.FormInput {
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.FormInput .Borders {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.FormInput .Borders span {
+  position: absolute;
+  background-color: #1928f5;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+
+.FormInput .Borders .Left {
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  height: 0;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.FormInput .Borders .Right {
+  right: 0;
+  top: 0;
+  width: 2px;
+  height: 0;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.FormInput .Borders .Top {
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 2px;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.FormInput .Borders .Bottom {
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.FormInput .Input {
+  border: 2px solid #ececf1;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.FormInput .Input:focus {
+  outline: none;
+}
+
+.FormInput .Input:focus + .Borders .Left {
+  height: 100%;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.FormInput .Input:focus + .Borders .Right {
+  height: 100%;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.FormInput .Input:focus + .Borders .Top {
+  width: 100%;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.FormInput .Input:focus + .Borders .Bottom {
+  width: 100%;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.FormInput .InputLabel {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 600;
+  top: -5px;
+  left: 20px;
+  background-color: #fff;
+  padding: 0 4px;
+  color: #b8bdcb;
+  z-index: 3;
+}
+
+.FormError {
+  color: #BF0202;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.SimpleTableContainer {
+  overflow-x: auto;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.SimpleTable {
+  display: table;
+  margin-top: 50px;
+}
+
+.SimpleTable .Heads {
+  padding: 5px 0;
+}
+
+.SimpleTable .Heads .TableColumn {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.SimpleTable .TableRow {
+  display: table-row;
+}
+
+.SimpleTable .TableColumn {
+  display: table-cell;
+  padding: 5px;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  min-width: 200px;
+}
+
+.Btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 35px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 100px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.Btn-Blue {
+  background-color: #1928f5;
+  color: #fff;
+}
+
+.Btn-Blue:hover {
+  background-color: #091c50;
+}
+
+.Btn-White {
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #abb0bf;
+}
+
+.Btn-White:hover {
+  border-color: #091c50;
+  color: #091c50;
+}
+/*# sourceMappingURL=main.css.map */
